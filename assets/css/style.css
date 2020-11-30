@@ -1,0 +1,120 @@
+/* reset iniziale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* classi generali */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 35px;
+}
+
+/* header e navbar menu */
+header {
+  display: flex;
+  padding: 45px 0;
+}
+
+.logo {
+  flex-basis: 10%;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 90%;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+nav ul li a {
+  color: rgb(139, 149, 158);
+}
+
+nav ul li a.selected,
+nav ul li a:hover {
+  color: rgb(25, 28, 31);
+}
+
+.left li {
+  margin-right: 35px;
+}
+
+.right li {
+  margin-left: 30px;
+}
+
+.left a {
+  text-transform: uppercase;
+}
+
+.right .get {
+  background-color: rgb(235, 0, 141);
+  border-radius: 30px;
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: background-color 0.4s ease;
+}
+
+.right .get:hover {
+  background-color: #d7007c;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
+    rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  padding: 20px 30px;
+}
+
+.has-dropdown i {
+  margin-left: 8px;
+}
+
+.dropdown li a.has-apex {
+  position: relative;
+}
+
+.has-apex .apex {
+  color: rgb(235, 0, 141);
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: -8px;
+  right: -25px;
+}
+
+.dropdown.visible {
+  display: block;
+}
+
+.dropdown li {
+  margin: 0;
+  padding: 12px 12px;
+}
