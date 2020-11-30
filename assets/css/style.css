@@ -84,7 +84,7 @@ nav ul li a:hover {
 }
 
 .dropdown {
-  display: block;
+  display: none;
   position: absolute;
   top: 30px;
   left: -30px;
