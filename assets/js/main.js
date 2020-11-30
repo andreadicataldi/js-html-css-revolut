@@ -1,12 +1,7 @@
 $(document).ready(function () {
-  $(".has-dropdown").hover(
+  $(".has-dropdown").click(
     function () {
-      //mostra sottomenu
-      $(".dropdown", this).stop(true, true).delay(50).slideDown(100);
+      $(".dropdown", this).toggle();
     },
-    function () {
-      //nascondi sottomenu
-      $(".dropdown", this).stop(true, true).slideUp(200);
-    }
   );
 });
