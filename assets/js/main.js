@@ -4,7 +4,7 @@ $(document).ready(function () {
       $(".dropdown", this).stop(true, true).delay(50).slideDown(100);
     },
     function () {
-      $(".dropdown", this).stop(true, true).delay(100).slideUp(200);
+      $(".dropdown", this).stop(true, true).delay(100).slideUp(10);
     }
   );
 });
