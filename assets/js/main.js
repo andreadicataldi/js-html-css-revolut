@@ -1,7 +1,10 @@
 $(document).ready(function () {
-  $(".has-dropdown").click(function(e){
-    $(".dropdown").hide();
-    $this = $(this).find(".dropdown");
-    $this.toggle();
-  });
+  $(".has-dropdown").hover(
+    function () {
+      $(".dropdown", this).stop(true, true).delay(50).slideDown(100);
+    },
+    function () {
+      $(".dropdown", this).stop(true, true).delay(100).slideUp(200);
+    }
+  );
 });
